@@ -4,10 +4,10 @@ if (!defined('ABSPATH')) exit;
 
 class gdrts_font_ascii extends gdrts_font {
     /* whenever you make changes, modify the version number */
-    public $version = '1.0.0';
+    public $version = '1.1.0';
 
     /* name of the font, it has to match name of the CSS classes 
-     * this is used for name of the font class: gdrts-fonticon-cuset */
+     * this is used for name of the font class: gdrts-fonticon-ascii */
     public $name = 'ascii';
 
     /* list of the rating methods this font supports.
@@ -26,15 +26,20 @@ class gdrts_font_ascii extends gdrts_font {
         /* label of the font for display purpose */
         $this->label = __("ASCII Font Icon", "gdrts-ascii-font");
 
-        /* characters can be plain characters or decimal/hexadeimal encoded
+        /* Characters can be plain characters or decimal/hexadecimal encoded
          * HTML entities. To get values for all supported unicode character,
          * use this website: http://www.fileformat.info/info/unicode/index.htm
-         * for chacters with decimal value over 65535, you must copy/paste
+         * for characters with decimal value over 65535, you must copy/paste
          * actual character, JavaScript doesn't support converting HTML
          * entities with value over 65535. For HTML enity values don't
          * include semi colon character at the end.
          * Most standard fonts support all unicode characters. And some 
-         * characters are not properly vertically aligned. */
+         * characters are not properly vertically aligned.
+         *
+         * In some cases, characters may be interpreted as emojis, making the
+         * use for rating purposes impossible. Make sure to test that ASCII
+         * characters you want are not emojis.
+         */
 
         $this->icons = array(
             'star' => array('char' => '&#x2605;', 'label' => __("Star", "gdrts-ascii-font")),
@@ -55,6 +60,4 @@ class gdrts_font_ascii extends gdrts_font {
             'smiley' => array('like' => '&#9787;', 'liked' => '&#10004;', 'clear' => '🗙', 'label' => __("Smiley", "gdrts-ascii-font")),
         );
     }
-
-    public function enqueue_core_files() { }
 }

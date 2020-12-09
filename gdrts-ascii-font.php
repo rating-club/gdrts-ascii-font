@@ -1,17 +1,21 @@
 <?php
 
 /*
-Plugin Name: GD Rating System: ASCII Font
-Plugin URI: https://rating.dev4press.com/
-Description: Example on how to add ascii character icons for GD Rating System plugin
-Version: 1.0
-Author: Milan Petrovic
-Author URI: https://www.dev4press.com/
-Text Domain: gdrts-ascii-font
-Private: true
+Plugin Name:       GD Rating System Pro: ASCII Font Demo
+Plugin URI:        https://rating.dev4press.com/
+Description:       This is a demo plugin showing how to add ASCII character icons for use with GD Rating System Pro plugin.
+Author:            Milan Petrovic
+Author URI:        https://www.dev4press.com/
+Text Domain:       gdrts-ascii-font
+Version:           1.1
+Requires at least: 5.0
+Tested up to:      5.6
+Requires PHP:      7.0
+License:           GPLv3 or later
+License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
 == Copyright ==
-Copyright 2008 - 2016 Milan Petrovic (email: milan@gdragon.info)
+Copyright 2008 - 2020 Milan Petrovic (email: milan@gdragon.info)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
